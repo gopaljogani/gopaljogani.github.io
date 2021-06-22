@@ -3,20 +3,48 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  # - title: "Talks"
+  #   url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  #- title: "Teaching"
+  #  url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  # - title: "Portfolio"
+  #   url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "Blog"
     url: /year-archive/
+
+  # - title: "Resources"
+  #   url: /resources/
+
+  - title: "ML Glossary"
+    url: /machine-learning-glossary/
     
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+  #   url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+  #  url: /markdown/
+
+
+sidebar-glossary:
+  - title: "General ML concepts"
+    url: /machine-learning-glossary/concepts/
+  - title: "Supervised learning"
+    url: /machine-learning-glossary/supervised/
+    # child:
+    #   - title: "Classification"
+    #     url: /machine-learning-glossary/supervised/#classification
+    #   - title: "Regression"
+    #     url: /machine-learning-glossary/supervised/#regression
+  - title: "Unsupervised learning"
+    url: /machine-learning-glossary/unsupervised/
+  - title: "Reinforcement learning"
+    url: /machine-learning-glossary/reinforcement/
+  # - title: "Information Theory"
+  #   url: /machine-learning-glossary/information/
+  - title: "Deep learning"
+    url: /machine-learning-glossary/deep/
+  - title: "Optimization"
+    url: /machine-learning-glossary/optimization/
