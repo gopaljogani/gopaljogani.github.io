@@ -23,12 +23,13 @@
       style="align:left; border: 1px solid #d3d3d3; border-style: outset;"
       alt="">
     </div>
-    <div style="flex:5;">
-      <b class="archive__item-title" itemprop="headline">{{ title }}</b>
+    <div style="flex:4;">
+      <b class="archive__item-subtitle" itemprop="headline">{{ title }}</b>
       <p class="archive__item-publication" itemprop="description">{{ post.authors_before }}<b>Y. Dubois</b>{{ post.authors_after }}</p>
-      {% if post.venue and post.venue != "" %}<p class="archive__item-publication" itemprop="description" style="color:#175E54">{{ post.venue }}</p>
-      {% else %}<p class="archive__item-publication" itemprop="description">{{ post.preprint }}</p>{% endif %}
-      {% if post.award and post.award != "" %}<p class="archive__item-publication" itemprop="description" style="color:red">🎉 {{ post.award }}</p>{% endif %}
+      {% if post.venue and post.venue != "" %}<span class="archive__item-publication" itemprop="description" style="color:#175E54">{{ post.venue }}</span>
+      {% else %}<span class="archive__item-publication" itemprop="description">{{ post.preprint }}</span>{% endif %}
+      {% if post.award and post.award != "" %}<span class="archive__item-publication" itemprop="description" style="color:red">{{ post.award }} 🎉</span>{% endif %}
+      <br> 
       <p class="archive__item-publication" itemprop="description">TLDR: {{ post.tldr }}</p>
       {% if post.categories %}
         {% assign current = post %}

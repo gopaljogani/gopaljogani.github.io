@@ -58,6 +58,16 @@
   }
 }
 
+.archive__item-subtitle {
+  margin-top: 1em;
+  border-bottom: none;
+  font-size: $type-size-syntax;
+
+  & + p {
+    text-indent: 0;
+  }
+}
+
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
@@ -100,7 +110,7 @@
    List view
    ========================================================================== */
 
-  .list__item {
+.list__item {
 
   .page__meta {
     margin: 0 0 4px;

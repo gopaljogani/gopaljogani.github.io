@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: ""
-excerpt: "About me"
+title: "Yet another aspiring machine learning researcher."
+excerpt: "Incoming "
 author_profile: true
 no_meta: true
 redirect_from: 
@@ -20,8 +20,9 @@ Outside of machine learning I spend my time playing sports with friends (:ski:,:
 
 News
 ======
-- Mai 2021: Incredibly honored to have been selected as a [Knights-Hennessy Scholar](https://knight-hennessy.stanford.edu/) !
-- April 2021: I will be starting my PhD at Stanford University!
+- May 2021: Incredibly honored to have been selected as a [Knights-Hennessy Scholar](https://knight-hennessy.stanford.edu/) !
+- April 2021: I will be starting my PhD at Stanford University in September 2021!
+- September 2020: Just finished my Facebook AI residency. Next up: internship at Vector Institute for one year.
 
 
 

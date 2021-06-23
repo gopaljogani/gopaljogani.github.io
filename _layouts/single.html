@@ -69,6 +69,7 @@ layout: default
         {% include page__taxonomy.html %}
         {% include page__date.html %}
         {% if page.read_time %}
+          {% assign current = page %}
           <p><i class="fas fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
         {% endif %}
       </footer>

@@ -18,7 +18,7 @@ teaser                   : "teaser.jpg" # filename of teaser fallback teaser ima
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160 # used to compute the reading time of each article
 future                   : false
-read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 search                   : true # #default false
 comments:
@@ -171,7 +171,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..3
   smart_quotes: ["apos", "apos", "quot", "quot"]
   enable_coderay: false
 
@@ -257,7 +257,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
+# paginate: 10 # amount of posts to show
 # paginate_path: /page:num/
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

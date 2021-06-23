@@ -5,7 +5,7 @@
 <summary>:books: Gaussian Processes for Machine Learning</summary>
 <div markdown='1'>
 
-+ Author : [C. Rasmussen](http://mlg.eng.cam.ac.uk/carl/){:.mdLink}, [C. Williams](https://homepages.inf.ed.ac.uk/ckiw/){:.mdLink}
++ Author : [C. Rasmussen](http://mlg.eng.cam.ac.uk/carl/), [C. Williams](https://homepages.inf.ed.ac.uk/ckiw/)
 + Review : Very good concise book that perfectly balances the amount of math to lay a formal foundation in Gaussian Processes (GP) for ML, while still being easy to follow. A must read for anyone interested in GP. The provided code turned into a easy to use Matlab toolbox ([GPML](http://www.gaussianprocess.org/gpml/code/matlab/doc/)). 
 + Recommend as : 
     * Introductory book to Gaussian Processes (chapters 1-5).
@@ -13,7 +13,7 @@
     * Reference for GP.
 + Notes : Fortunately, Prof. Rasmussen teaches a few of my classes at Cambridge U., he really has a gift to explain complicated topics in easy terms.
 + Level : Intermediate - Advanced. 
-+ [Link](http://www.gaussianprocess.org/gpml/chapters/){:.mdLink}
++ [Link](http://www.gaussianprocess.org/gpml/chapters/)
 + Price : Free HTML version, ~40$ hardcover.
 
 </div>
@@ -32,7 +32,7 @@
 + Recommend as : 
     * Stand alone videos for anyone interested in Bayesian Deep Learning (should have some knowledge of ML and DL).
 + Level : Intermediate-Advanced. 
-+ [Link](https://www.youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ){:.mdLink}
++ [Link](https://www.youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ)
 
 </div>
 </details>

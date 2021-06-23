@@ -27,12 +27,12 @@ sidebar:
 
 :mag: <span class='note'> Side Notes</span>: Games could also be framed in a supervised problem. The training set would consist in many different states of the environment and the optimal action to take in each of those. Creating such a dataset is not possible for most applications as it requires to enumerate the exponential number of states and to know the associated best action (*e.g.* exact rotation of all your joints when you play tennis). Note that during supervised training, the feedback indicates the correct action independently to the chosen action. The RL framework is a lot more natural as the agent is trained by playing the game. Importantly, the agent interacts with the environment such that the states that it will visit depend on previous actions. So it is a chicken-egg problem where it will unlikely reach good states before being trained, but it has to reach good states to get reward and train effectively. This leads to training curves that start with very long plateaus of low reward until it reaches a good state (somewhat by chance) and then learn quickly. In contrast, supervised methods have very steep loss curves at the start.
 
-:information_source: <span class='resources'> Resources </span> : The link and differences between supervised and RL is described in details by [A. Barto and T. Dietterich](http://www-anw.cs.umass.edu/pubs/2004/barto_d_04.pdf){:.mdLink}. 
+:information_source: <span class='resources'> Resources </span> : The link and differences between supervised and RL is described in details by [A. Barto and T. Dietterich](http://www-anw.cs.umass.edu/pubs/2004/barto_d_04.pdf). 
 
 In RL, future states depend on current actions, thus requiring to model indirect consequences of actions and planning. Furthermore, the agent often has to take actions in real-time while planning for the future.  All of the above makes it very similar to how humans learn, and is thus widely used in psychology and neuroscience. 
 
 
-:information_source: <span class='resources'> Resources </span>  : All this section on RL is highly influenced by [Sutton and Barto's introductory book](http://incompleteideas.net/book/the-book-2nd.html){:.mdLink}.
+:information_source: <span class='resources'> Resources </span>  : All this section on RL is highly influenced by [Sutton and Barto's introductory book](http://incompleteideas.net/book/the-book-2nd.html).
 
 ## Exploration vs Exploitation
 
@@ -43,7 +43,7 @@ A fundamental trade-off in RL is how to balance **exploration** and **exploitati
 <div class="exampleBoxed">
 <div markdown="1">
 
-:school_satchel: <span class='example'>Example</span>:  Lets consider a simplified version of RL - **Multi-armed Bandits** - to illustrate this concept (example and plots from [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html){:.mdLink}):
+:school_satchel: <span class='example'>Example</span>:  Lets consider a simplified version of RL - **Multi-armed Bandits** - to illustrate this concept (example and plots from [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html)):
 
 Let's assume that you go in a very generous casino. *I.e.* an utopic casino in which you can make money in the long run (spoiler alert: this doesn't exist, and in real-life casinos the best action is always to leave :sweat_smile:). This casino contains 10-slot machines, each of these give a certain reward $r$ when the agent decides to play on them. The agent can stay the whole day in this casino and wants to maximize its profit.
 
@@ -86,7 +86,7 @@ By running all the different strategies for different hyperparameters and averag
 ![Parameters Exploration Multi-armed Bandits](/images/blog/glossary-old/exploration-multiarmed.png)
 </div>
 
-We see that UCB performs best in this case, and is the most robust with regards to its hyper-parameter $c$. Although UCB tends to work well, this will not always be the case ([No Free Lunch Theorem](#no-free-lunch-theorem){:.mdLink} again).
+We see that UCB performs best in this case, and is the most robust with regards to its hyper-parameter $c$. Although UCB tends to work well, this will not always be the case ([No Free Lunch Theorem](#no-free-lunch-theorem) again).
 
 :mag: <span class='note'>Side Notes</span>: 
 
@@ -103,7 +103,7 @@ We see that UCB performs best in this case, and is the most robust with regards 
 
 Markov Decision Processes (MDPs) are a mathematical idealized form of the RL problem that suppose that states follow the **Markov Property**. *I.e.* that future states are conditionally independent of past ones given the present state: $S_{t+1} \perp \\{S_{i}\\}_{i=1}^{t-1} \vert S_t$.
 
-Before diving into the details, it is useful to visualize how simple a MDP is (image taken from [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html){:.mdLink}):
+Before diving into the details, it is useful to visualize how simple a MDP is (image taken from [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html)):
 
 <div markdown="1">
 ![Markov Decision Process](/images/blog/glossary-old/MDP.png){:width='477px'}
@@ -111,7 +111,7 @@ Before diving into the details, it is useful to visualize how simple a MDP is (i
 
 Important concepts:
 
-* **Agent**: learner and decision maker. This corresponds to the *controller* in [classical control theory](https://en.wikipedia.org/wiki/Classical_control_theory){:.mdLink}.
+* **Agent**: learner and decision maker. This corresponds to the *controller* in [classical control theory](https://en.wikipedia.org/wiki/Classical_control_theory).
 * **Environment**: everything outside of the agent. *I.e.* what it interacts with. It corresponds to the *plant* in classical control theory. Note that in the case of a human / robot, the body should be considered as the environment rather than as the agent because it cannot be modified arbitrarily (the boundary is defined by the lack of possible control rather than lack of knowledge).
 * **Time step** *t*: discrete time at which the agent and environment interact. Note that it doesn't have to correspond to fix real-time intervals. Furthermore, it can be extended to the continuous setting.
 * **State** $S_t = s \in \mathcal{S}$ : information available to the agent about the environment.
@@ -190,10 +190,10 @@ To schematically represents what different algorithms do, it is useful to look a
 ![Backup Diagram](/images/blog/glossary-old/backup_diagram.png){:width='200px'}
 </div>
 
-:mag: <span class='note'> Side Notes </span> : We usually assume that we have a **finite** MDP. *I.e.* that $\mathcal{R},\mathcal{A},\mathcal{S}$ are finite. Dealing with continuous state and actions pairs requires approximations. One possible way of converting a continuous problem to a finite one, is to [discretized the state and actions space](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa12/slides/discretization.pdf){:.mdLink}.
+:mag: <span class='note'> Side Notes </span> : We usually assume that we have a **finite** MDP. *I.e.* that $\mathcal{R},\mathcal{A},\mathcal{S}$ are finite. Dealing with continuous state and actions pairs requires approximations. One possible way of converting a continuous problem to a finite one, is to [discretized the state and actions space](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa12/slides/discretization.pdf).
 
 In the following sections, we will :
-* see how to solve the RL MDP problem exactly through a [non linear set of equations](#bellman-optimality-equations){:.mdLink} or [dynamic programing](#dynamic-programming){:.mdLink}
+* see how to solve the RL MDP problem exactly through a [non linear set of equations](#bellman-optimality-equations) or [dynamic programing](#dynamic-programming)
 * approximate the solution by bypassing the need of knowing the dynamics of the system.
 * model the dynamics of the system to enable the use of exact methods.
 
@@ -272,7 +272,7 @@ Practical RL algorithms thus settle for approximating the optimal Bellman equati
     * Requires <span class='disadvantageText'>large computational resources</span> as $\vert \mathcal{S} \vert$ is usually huge.
     * Requires $\infty$ number of iterations to find the exact solution.
     * Strongly dependent on the MDP assumption.
-* Backup Diagram from [David Silver's slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MC-TD.pdf){:.mdLink}:
+* Backup Diagram from [David Silver's slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MC-TD.pdf):
 <div markdown='1'>
 ![Backup Diagram Dynamic Programming](/images/blog/glossary-old/backup_dp.png){:width='477px'}
 </div>
@@ -284,7 +284,7 @@ Practical RL algorithms thus settle for approximating the optimal Bellman equati
 
 ### Policy Iteration
 
-The high-level idea is to iteratively: evaluate $v_\pi$ for the current policy $\pi$ (*policy evaluation* 1), use $v_\pi$ to improve $\pi'$ (*policy improvement* 1), evaluate $v_{\pi'}$ (*policy evaluation* 2)... Thus obtaining a sequence of strictly monotonically improving policies and value functions (except when converged to $\pi_{\*}$). As a finite MDP has only a finite number of possible policies, this is guaranteed to converge in a finite number of steps. This idea is often visualized using a 1d example taken from [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html){:.mdLink}):
+The high-level idea is to iteratively: evaluate $v_\pi$ for the current policy $\pi$ (*policy evaluation* 1), use $v_\pi$ to improve $\pi'$ (*policy improvement* 1), evaluate $v_{\pi'}$ (*policy evaluation* 2)... Thus obtaining a sequence of strictly monotonically improving policies and value functions (except when converged to $\pi_{\*}$). As a finite MDP has only a finite number of possible policies, this is guaranteed to converge in a finite number of steps. This idea is often visualized using a 1d example taken from [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html)):
 
 <div markdown="1">
 ![Generalized Policy Iteration](/images/blog/glossary-old/generalized_policy_iteration.png){:width='477px'}
@@ -460,7 +460,7 @@ By carefully selecting the states to update, we can often improve the convergenc
 
 ### Non DP Exact Methods
 
-Although DP algorithms are the most used for finding exact solution of the Bellman optimality equations, other methods can have better worst-case convergence guarantees. [**Linear Programming**](#linear-programming){:.mdLink} (LP) is one of those methods. Indeed, the Bellman optimality equations can be written as a linear program. Let $B$ be the Bellman operator (*i.e.* $v_{k+1} = B(v_k)$), and $\pmb{\mu_0}$ is a probability distribution over states, then:
+Although DP algorithms are the most used for finding exact solution of the Bellman optimality equations, other methods can have better worst-case convergence guarantees. [**Linear Programming**](#linear-programming) (LP) is one of those methods. Indeed, the Bellman optimality equations can be written as a linear program. Let $B$ be the Bellman operator (*i.e.* $v_{k+1} = B(v_k)$), and $\pmb{\mu_0}$ is a probability distribution over states, then:
 
 $$
 \begin{array}{ccc}
@@ -479,7 +479,7 @@ v_* = & arg\min_{v} & \sum_s \mu_0(s) v(s) \\
 \end{array}
 $$
 
-Using the [dual form](#duality){:.mdLink} of the LP program, the equation above can be rewritten as :
+Using the [dual form](#duality) of the LP program, the equation above can be rewritten as :
 
 $$
 \begin{aligned}
@@ -530,7 +530,7 @@ Although LP are rarely useful, they provide connections to a number of other met
 </div>
 <div markdown='1'>
 * :bulb: <span class='intuition'> Intuition </span> :
-    *  Approximates [Generalized Policy Iteration](#policy-iteration){:.mdLink} by estimating the expectations through sampling rather than computing them.
+    *  Approximates [Generalized Policy Iteration](#policy-iteration) by estimating the expectations through sampling rather than computing them.
     *  The idea is to estimate the value function by following a policy and averaging returns over multiple episodes, then updating the value function at every visited state.
 * :white_check_mark: <span class='advantage'> Advantage </span> :
     * Can <span class='advantageText'>learn from experience</span>, without explicit knowledge of the dynamics.
@@ -552,15 +552,15 @@ Although LP are rarely useful, they provide connections to a number of other met
 </details>
 </div> <p></p> 
 
-As mentioned previously, the dynamics of the environment are rarely known. In such cases we cannot use [DP](#dynamic-programing){:.mdLink}. Monte Carlo (MC) methods bypass this lack of knowledge by estimating the expected return from experience (*i.e.* sampling of the unknown dynamics). 
+As mentioned previously, the dynamics of the environment are rarely known. In such cases we cannot use [DP](#dynamic-programing). Monte Carlo (MC) methods bypass this lack of knowledge by estimating the expected return from experience (*i.e.* sampling of the unknown dynamics). 
 
-MC methods are very similar to the previously discussed [Generalized Policy Iteration](#policy-iteration){:.mdLink}(GPI). The main differences being:
+MC methods are very similar to the previously discussed [Generalized Policy Iteration](#policy-iteration)(GPI). The main differences being:
 
 * They *learn* the value-function by sampling from the MDP (experience) rather than *computing* these values using the dynamics of the MDP. 
 
 * MC methods **do not bootstrap**: each value function for each state/action is estimated independently. *I.e.* they do not update value estimates based on other value estimates.
 
-* In DP, given a state-value function, we could look ahead one step to determine a policy. This is not possible anymore due to the lack of knowledge of the dynamics. It is thus crucial to estimate the action value function $q_{\*}$ instead of $v_{\*}$ in [policy evaluation](#policy-evaluation){:.mdLink}. 
+* In DP, given a state-value function, we could look ahead one step to determine a policy. This is not possible anymore due to the lack of knowledge of the dynamics. It is thus crucial to estimate the action value function $q_{\*}$ instead of $v_{\*}$ in [policy evaluation](#policy-evaluation). 
 
 Recall that $q_\pi(s) = \mathbb{E}[R_{t+1} + \gamma G_{t+1} \vert S_{t}=s, A_t=a]$. <span class='intuitionText'>Monte Carlo Estimation approximates this expectations through sampling. *I.e.* by averaging the returns after every visits of state action pairs $(s,a)$</span>.
 
@@ -580,11 +580,11 @@ Both methods converge to $q_\pi(s,a)$ as the number of visits $n \to \infty$. Th
 
 ### On-Policy Monte Carlo GPI
 
-Let's make a simple generalized policy iteration (GPI) algorithm using MC methods. [As a reminder](#policy-iteration){:.mdLink}, GPI consists in iteratively alternating between evaluation (E) and improvement (I) of the policy, until we reach the optimal policy:
+Let's make a simple generalized policy iteration (GPI) algorithm using MC methods. [As a reminder](#policy-iteration), GPI consists in iteratively alternating between evaluation (E) and improvement (I) of the policy, until we reach the optimal policy:
 
 $$\pi _ { 0 } \stackrel { \mathrm { E } } { \longrightarrow } q _ { \pi _ { 0 } } \stackrel { \mathrm { I } } { \longrightarrow } \pi _ { 1 } \stackrel { \mathrm { E } } { \longrightarrow } q _ { \pi _ { 1 } } \stackrel { \mathrm { I } } { \longrightarrow } \pi _ { 2 } \stackrel { \mathrm { E } } { \longrightarrow } \cdots \stackrel { \mathrm { I } } { \longrightarrow } \pi _ { * } \stackrel { \mathrm { E } } { \rightarrow } q _ { * }$$
 
-* Generalized [Policy Evaluation](#policy-evaluation){:.mdLink} (prediction). Evaluates the value function $Q \approx q_\pi$ (not $V$ as we do not have the dynamics). Let $F_i(s,a)$ return the time step $t$ at which state-action pair $(s,a)$ is first seen (first-visit MC) in  episode $i$ (return $-1$ if never seen), and $G_{t}^{(i)}(\pi)$ be the discounted return from time $t$ of the $i^{th}$ episode when following $\pi$:
+* Generalized [Policy Evaluation](#policy-evaluation) (prediction). Evaluates the value function $Q \approx q_\pi$ (not $V$ as we do not have the dynamics). Let $F_i(s,a)$ return the time step $t$ at which state-action pair $(s,a)$ is first seen (first-visit MC) in  episode $i$ (return $-1$ if never seen), and $G_{t}^{(i)}(\pi)$ be the discounted return from time $t$ of the $i^{th}$ episode when following $\pi$:
 
 
 
@@ -597,11 +597,11 @@ q_\pi(s,a) &:= \mathbb{E}[G_t \vert S_{t}=s, A_t=a] \\
 $$ 
 
 
-* [Policy Improvement](#policy-improvement){:.mdLink}, make a GLIE (defined below) policy $\pi$ from $Q$.  Note that the policy improvement theorem still holds.
+* [Policy Improvement](#policy-improvement), make a GLIE (defined below) policy $\pi$ from $Q$.  Note that the policy improvement theorem still holds.
 
-Unsurprisingly, MC methods can be shown to converge if they [maintain exploration](#exploration-vs-exploitation){:.mdLink} and when the policy evaluation step uses an $\infty$ number of samples. Indeed, these 2 conditions ensure that all expectations are correct as MC sampling methods are unbiased.
+Unsurprisingly, MC methods can be shown to converge if they [maintain exploration](#exploration-vs-exploitation) and when the policy evaluation step uses an $\infty$ number of samples. Indeed, these 2 conditions ensure that all expectations are correct as MC sampling methods are unbiased.
 
-Of course using an $\infty$ number of samples is not possible, and we would like to alternate (after every episode) between evaluation and improvement even when evaluation did not converge (similarly [value iteration](#value-iteration){:.mdLink}). Although MC methods cannot converge to a suboptimal policy in this case, the fact that it converges to the optimal fixed point has yet to be formally proved.
+Of course using an $\infty$ number of samples is not possible, and we would like to alternate (after every episode) between evaluation and improvement even when evaluation did not converge (similarly [value iteration](#value-iteration)). Although MC methods cannot converge to a suboptimal policy in this case, the fact that it converges to the optimal fixed point has yet to be formally proved.
 
 Maintaining exploration is a major issue. Indeed, if $\pi$ is deterministic then the samples will only improve estimates for one action per state. To ensure convergence we thus need a policy which is *Greedy in the Limit with Infinite Exploration* (*GLIE*). *I.e.* : 1/ All state-action pairs have to be explored infinitely many times; 2/ The policy has to converge to a greedy one. Possible solutions include:
 
@@ -696,7 +696,7 @@ In the on-policy case we had to use a hack ($\epsilon \text{-greedy}$ policy) in
 
 The *behavior* policy $b$ is used to collect samples and is a non-zero stochastic policy which ensures convergence by ensuring exploration. The *target* policy $\pi$ is the policy we are estimating and will be using at test time, it focuses on exploitation. The latter is often a deterministic policy. These methods contrast with **on-policy** ones, that uses a single policy.
 
-:bulb: <span class='intuition'>Intuition</span>: The intuition behind off-policy methods is to follow an other policy but to weight the final return in such a way that compensates for the actions taken by $b$. This can be done via [**Importance Sampling**](https://en.wikipedia.org/wiki/Importance_sampling){:.mdLink} without biasing the final estimate.
+:bulb: <span class='intuition'>Intuition</span>: The intuition behind off-policy methods is to follow an other policy but to weight the final return in such a way that compensates for the actions taken by $b$. This can be done via [**Importance Sampling**](https://en.wikipedia.org/wiki/Importance_sampling) without biasing the final estimate.
 
 Given a starting state $S_t$ the probability of all subsequent state-action trajectory $A_t, S_{t+1}, A_{t+1}, \ldots, S_T$ when following $\pi$ is:
 
@@ -753,7 +753,7 @@ def off_policy_mc(Q, game, b, actions, n=..., gamma=...):
     return V
 ```
 
-:mag: <span class='note'>Side Notes</span>: As for on policy, Off policy MC control can also be written in an [Incremental manner](#incremental-implementation){:.mdLink}. The details can be found in chapter 5.6 of [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html){:.mdLink}.
+:mag: <span class='note'>Side Notes</span>: As for on policy, Off policy MC control can also be written in an [Incremental manner](#incremental-implementation). The details can be found in chapter 5.6 of [Sutton and Barto](http://incompleteideas.net/book/the-book-2nd.html).
 
 ## Temporal-Difference Learning
 
@@ -801,17 +801,17 @@ def off_policy_mc(Q, game, b, actions, n=..., gamma=...):
 </details>
 </div> <p></p> 
 
-The fundamental idea of temporal-difference (TD) learning is to remove the need of waiting until the end of an episode to get $G_t$ in [MC](#monte-carlo-gpi){:.mdLink} methods, by taking a single step and update using $R_{t+1} + \gamma V(S_{t+1}) \approx G_t$. Note that when the estimates are correct, *i.e.* $V(S_{t+1}) = v_\pi(S_{t+1})$, then $\mathbb{E}[R_{t+1} + \gamma V(S_{t+1})] = \mathbb{E}[G_t]$.
+The fundamental idea of temporal-difference (TD) learning is to remove the need of waiting until the end of an episode to get $G_t$ in [MC](#monte-carlo-gpi) methods, by taking a single step and update using $R_{t+1} + \gamma V(S_{t+1}) \approx G_t$. Note that when the estimates are correct, *i.e.* $V(S_{t+1}) = v_\pi(S_{t+1})$, then $\mathbb{E}[R_{t+1} + \gamma V(S_{t+1})] = \mathbb{E}[G_t]$.
 
-As we have seen, [incremental MC](#incremental-implementation){:.mdLink} methods for evaluating $V$, can be written as $V_{k+1}(S_t) = V_{k}(S_t) + \alpha \left( G_t - V_{k}(S_t) \right)$. Using bootstrapping, this becomes:
+As we have seen, [incremental MC](#incremental-implementation) methods for evaluating $V$, can be written as $V_{k+1}(S_t) = V_{k}(S_t) + \alpha \left( G_t - V_{k}(S_t) \right)$. Using bootstrapping, this becomes:
 
 $$V_{k+1}(S_t) = V_{k}(S_t) + \alpha \left( R_{t+1} + \gamma V_k(S_{t+1}) - V_{k}(S_t) \right)$$
 
-This important update is called $\textbf{TD(0)}$, as it is a specific case of [TD(lambda)](https://en.wikipedia.org/wiki/Temporal_difference_learning#TD-Lambda){:.mdLink}. The error term that is used to update our estimate, is very important in RL and Neuroscience. It is called the **TD Error**:
+This important update is called $\textbf{TD(0)}$, as it is a specific case of [TD(lambda)](https://en.wikipedia.org/wiki/Temporal_difference_learning#TD-Lambda). The error term that is used to update our estimate, is very important in RL and Neuroscience. It is called the **TD Error**:
 
 $$\delta_t := R_{t+1} + \gamma V(S_{t+1}) - V(S_t)$$
 
-Importantly $\text{TD}(0)$ always converges to $v_\pi$ if $\alpha$ decreases according to the [usual stochastic conditions](#incremental-implementation){:.mdLink} (*e.g.* $\alpha = \frac{1}{t}$). Although, the theoretical difference in speed of convergence of TD(0) and MC methods is still open, <span class='practiceText'>the former often converges faster in practice</span>.
+Importantly $\text{TD}(0)$ always converges to $v_\pi$ if $\alpha$ decreases according to the [usual stochastic conditions](#incremental-implementation) (*e.g.* $\alpha = \frac{1}{t}$). Although, the theoretical difference in speed of convergence of TD(0) and MC methods is still open, <span class='practiceText'>the former often converges faster in practice</span>.
 
 :mag: <span class='note'>Side Notes</span>: 
 * $\delta_t$ is the error in $V(S_t)$ but is only available at time $t+1$.
@@ -823,7 +823,7 @@ Importantly $\text{TD}(0)$ always converges to $v_\pi$ if $\alpha$ decreases acc
 
 ### On-Policy TD GPI (SARSA)
 
-Similarly to MC methods, we need an action-value function $q_\pi$ instead of a state one $v_\pi$ because we do not know the dynamics and thus cannot simply learn the policy from $v_\pi$. Replacing TD estimates in [on policy MC GPI](#on-policy-monte-carlo-gpi){:.mdLink}, we have:
+Similarly to MC methods, we need an action-value function $q_\pi$ instead of a state one $v_\pi$ because we do not know the dynamics and thus cannot simply learn the policy from $v_\pi$. Replacing TD estimates in [on policy MC GPI](#on-policy-monte-carlo-gpi), we have:
 
 * Generalized Policy Evaluation (Prediction): this update is done for every transition from a non-terminal state $S_t$ (set $Q(s_{terminal},A_{t+1})=0$):
 
@@ -859,7 +859,7 @@ def sarsa(game, states, actions, n=..., eps=..., gamma=..., alpha=...):
 
 ## Off Policy TD GPI (Q-Learning)
 
-Just as with [off-policy MC](#off-policy-monte-carlo-gpi){:.mdLink}, TD can be written as an off-policy algorithm. In this case, the TD error is not computed with respect to the next sample but with respect to the current optimal greedy policy (*i.e.* the one maximizing the current action-value function $Q$)
+Just as with [off-policy MC](#off-policy-monte-carlo-gpi), TD can be written as an off-policy algorithm. In this case, the TD error is not computed with respect to the next sample but with respect to the current optimal greedy policy (*i.e.* the one maximizing the current action-value function $Q$)
 
 * Generalized Policy Evaluation (Prediction): 
 

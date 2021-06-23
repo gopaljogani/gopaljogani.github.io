@@ -1,10 +1,10 @@
 ---
-title: 'Supervised learning'
+title: 'Classification'
 date: 2017-11-19
 modified: 2019-02-18
-permalink: /machine-learning-glossary/supervised
+permalink: /machine-learning-glossary/supervised/classification
 toc: true
-excerpt: "ML concepts: supervised learning."
+excerpt: "ML concepts: classification."
 header: 
   teaser: "blog/glossary/glossary.png"
 tags:
@@ -21,28 +21,11 @@ sidebar:
 
 {% include base_path %}
 
-
-*Supervised learning tasks tackle problems that have labeled data.*
-
-:bulb: <span class='intuition'> Intuition </span>: It can be thought of a teacher who corrects a multiple choice exam. At the end you will get your average result as well as the correct answer to any of the questions.
-
-Supervised learning can be further separated into two broad type of problems:
-* **Classification**: here the output variable $y$ is categorical. We are basically trying to assign one or multiple classes to an observation. Example: is it a cat or not ?
-* **Regression**: here the output variable $y$ is continuous. Example : how tall is this person ?
-
 ## Classification
-*The classification problem consists of assigning a set of classes/categories to an observation. I.e* $$\mathbf{x} \mapsto y,\ y \in \{0,1,...,C\}$$
 
-Classification problems can be further separated into:
-
-* **Binary:** There are 2 possible classes. $$C=2,\ y \in \{0,1\}$$
-* **Multi-Class:** There are more than 2 possible classes. $$C>2$$
-* **Multi-Label:** If labels are not mutually exclusive. Often replaced by $$C$$ binary classification specifying whether an observation should be assigned to each class.
-
-Common evaluation metrics include Accuracy, F1-Score, AUC... I have a [section devoted for these classification metrics](#classification-metrics){:.mdLink}.
 
 :wavy_dash: <span class="compare"> Compare to </span> : 
-[Regression](#regression){:.mdLink}
+[Regression](#regression)
 
 
 ### Decision Trees
@@ -79,8 +62,8 @@ Common evaluation metrics include Accuracy, F1-Score, AUC... I have a [section d
 <div markdown='1'>
 * :bulb: <span class='intuition'> Intuition </span> :
     * Split the training data based on “the best” question(*e.g.* is he older than 27 ?). Recursively split the data while you are unhappy with the classification results.
-    * Decision trees are basically the algorithm to use for the "20 question" game. [Akinator](http://en.akinator.com/){:.mdLink} is a nice example of what can been implemented with decision trees. Akinator is probably based on fuzzy logic expert systems (as it can work with wrong answers) but you could do a simpler version with decision trees.
-    * "Optimal" splits are found by maximization of [information gain](#machine-learning-and-entropy){:.mdLink} or similar methods.
+    * Decision trees are basically the algorithm to use for the "20 question" game. [Akinator](http://en.akinator.com/) is a nice example of what can been implemented with decision trees. Akinator is probably based on fuzzy logic expert systems (as it can work with wrong answers) but you could do a simpler version with decision trees.
+    * "Optimal" splits are found by maximization of [information gain](#machine-learning-and-entropy) or similar methods.
 * :wrench: <span class='practice'> Practical </span> :
     * Decision trees thrive when you need a simple and interpretable model but the relationship between $y$ and $\mathbf{x}$ is complex.
     * Training Complexity : <span class='practiceText' markdown='1'> $O(MND + ND\log(N) )$ </span> . 
@@ -125,7 +108,7 @@ Note: For more information, please see the "*details*" and "*Pseudocode and Comp
 <details>
 <summary>Details</summary> 
 <div markdown='1'>
-The idea behind decision trees is to partition the input space into multiple regions. *E.g.* region of men who are more than 27 years old. Then predict the most probable class for each region, by assigning the mode of the training data in this region. Unfortunately, finding an optimal partitioning is usually computationally infeasible ([NP-complete](https://people.csail.mit.edu/rivest/HyafilRivest-ConstructingOptimalBinaryDecisionTreesIsNPComplete.pdf){:.mdLink}) due to the combinatorially large number of possible trees. In practice the different algorithms thus use a greedy approach. *I.e.* each split of the decision tree tries to maximize a certain criterion regardless of the next splits. 
+The idea behind decision trees is to partition the input space into multiple regions. *E.g.* region of men who are more than 27 years old. Then predict the most probable class for each region, by assigning the mode of the training data in this region. Unfortunately, finding an optimal partitioning is usually computationally infeasible ([NP-complete](https://people.csail.mit.edu/rivest/HyafilRivest-ConstructingOptimalBinaryDecisionTreesIsNPComplete.pdf)) due to the combinatorially large number of possible trees. In practice the different algorithms thus use a greedy approach. *I.e.* each split of the decision tree tries to maximize a certain criterion regardless of the next splits. 
 
 *How should we define an optimality criterion for a split?* Let's define an impurity (error) of the current state, which we'll try to minimize. Here are 3 possible state impurities:
 
@@ -133,9 +116,9 @@ The idea behind decision trees is to partition the input space into multiple reg
     * :bulb: <span class='intuitionText'> The accuracy error : $1-Acc$</span> of the current state. *I.e.* the error we would do, by stopping at the current state.
     * $$ClassificationError = 1 - \max_c (p(c))$$
 
-* **[Entropy](#entropy){:.mdLink}**:  
+* **[Entropy](#entropy)**:  
     * :bulb: <span class='intuitionText'> How unpredictable are the classes</span> of the current state. 
-    * Minimize the entropy corresponds to maximizing the [information gain](#machine-learning-and-entropy){:.mdLink}.
+    * Minimize the entropy corresponds to maximizing the [information gain](#machine-learning-and-entropy).
     * $$Entropy = - \sum_{c=1}^C p(c) \log_2 \ p(c)$$
 
 * **Gini Impurity**:  
@@ -153,7 +136,7 @@ Here is a quick graph showing the impurity depending on a class distribution in 
 * Classification error may seem like a natural choice, but don't get fooled by the appearances: it's generally worst than the 2 other methods:
     *  It is "more" greedy than the others. Indeed, it only focuses on the current error, while Gini and Entropy try to make a purer split which will make subsequent steps easier. <span class='exampleText'> Suppose we have a binary classification with 100 observation in each class $(100,100)$. Let's compare a split which divides the data into $(20,80)$ and $(80,20)$, to an other split which would divide it into $(40,100)$ and $(60,0)$. In both case the accuracy error would be of $0.20\%$. But we would prefer the second case, which is **pure** and will not have to be split further. Gini impurity and the Entropy would correctly chose the latter. </span> 
     *  Classification error takes only into account the most probable class. So having a split with 2 extremely probable classes will have a similar error to split with one extremely probable class and many improbable ones.
-* Gini Impurity and Entropy [differ less than 2% of the time](https://www.unine.ch/files/live/sites/imi/files/shared/documents/papers/Gini_index_fulltext.pdf){:.mdLink} as you can see in the plot above. Entropy is a little slower to compute due to the logarithmic operation.
+* Gini Impurity and Entropy [differ less than 2% of the time](https://www.unine.ch/files/live/sites/imi/files/shared/documents/papers/Gini_index_fulltext.pdf) as you can see in the plot above. Entropy is a little slower to compute due to the logarithmic operation.
 
 **When should we stop splitting?** It is important not to split too many times to avoid over-fitting. Here are a few heuristics that can be used as a stopping criterion:
 
@@ -166,7 +149,7 @@ Such heuristics require problem-dependent thresholds (hyperparameters), and can 
 
 $$C_{pruning}(T) = \sum^{\vert T \vert }_{v=1} I(T,v) + \lambda \vert T \vert$$
 
-$\lambda$ is selected via [cross validation](#cross-validation){:.mdLink} and trades-off impurity and model complexity, for a given tree $T$, with leaf nodes $v=1...\vertT \vert$ using Impurity measure $I$.
+$\lambda$ is selected via [cross validation](#cross-validation) and trades-off impurity and model complexity, for a given tree $T$, with leaf nodes $v=1...\vertT \vert$ using Impurity measure $I$.
 
 **Variants**: there are various decision tree methods, that differ with regards to the following points:
 
@@ -186,7 +169,7 @@ Famous variants:
 
 Other variants include : C5.0 (next version of C4.5, probably less used because it's patented), MARS.
 
-:information_source: <span class='resources'> Resources </span> : A comparative study of [different decision tree methods](http://www.academia.edu/34100170/Comparative_Study_Id3_Cart_And_C4.5_Decision_Tree_Algorithm_A_Survey){:.mdLink}.
+:information_source: <span class='resources'> Resources </span> : A comparative study of [different decision tree methods](http://www.academia.edu/34100170/Comparative_Study_Id3_Cart_And_C4.5_Decision_Tree_Algorithm_A_Survey).
 </div>
 </details>
 </div> 
@@ -343,7 +326,7 @@ $$
 
 Note that because we are in a classification setting $y$ takes discrete values, so $p(y=c, \pmb\theta)=\pi_c$ is a categorical distribution.
 
-You might wonder why we use the simplifying conditional independence assumption. We could directly predict using $\hat{y} = arg\max_c p(y=c, \pmb\theta)p(\mathbf{x} \vert y=c, \pmb\theta)$. <span class='intuitionText'> The conditional assumption enables us to have better estimates of the parameters $\theta$ using less data </span>. Indeed, $p(\mathbf{x} \vert y=c, \pmb\theta)$ requires to have much more data as it is a $D$ dimensional distribution (for each possible label $c$), while $\prod_{j=1}^D p(x_j \vert y=c, \pmb\theta)$ factorizes it into $D$ 1-dimensional distributions which requires a lot less data to fit due to [curse of dimensionality](#curse-of-dimensionality){:.mdLink}. In addition to requiring less data, it also enables to easily mix different family of distributions for each features.
+You might wonder why we use the simplifying conditional independence assumption. We could directly predict using $\hat{y} = arg\max_c p(y=c, \pmb\theta)p(\mathbf{x} \vert y=c, \pmb\theta)$. <span class='intuitionText'> The conditional assumption enables us to have better estimates of the parameters $\theta$ using less data </span>. Indeed, $p(\mathbf{x} \vert y=c, \pmb\theta)$ requires to have much more data as it is a $D$ dimensional distribution (for each possible label $c$), while $\prod_{j=1}^D p(x_j \vert y=c, \pmb\theta)$ factorizes it into $D$ 1-dimensional distributions which requires a lot less data to fit due to [curse of dimensionality](#curse-of-dimensionality). In addition to requiring less data, it also enables to easily mix different family of distributions for each features.
 
 We still have to address 2 important questions: 
 
@@ -481,16 +464,16 @@ When using a uniform prior $\alpha_\theta=1$, this equation is called **Laplace 
 
 * Discrete Naive Bayes and Logistic Regression are a "generative-discriminative pair" as they both take the same form (linear in log probabilities) but estimate parameters differently. For example, in the binary case, Naive Bayes predicts the class with the largest probability. *I.e.* it predicts $C_1$ if $\log \frac{p(C_1 \vert \pmb{x})}{p(C_2 \vert \pmb{x})} = \log \frac{p(C_1 \vert \pmb{x})}{1-p(C_1 \vert \pmb{x})} > 0$. We have seen that discrete Naive Bayes is linear in the log space, so we can rewrite the equation as $\log \frac{p(C_1 \vert \pmb{x})}{1-p(C_1 \vert \pmb{x})} = 2 \log p(C_1 \vert \pmb{x}) - 1 = 2 \left( b + \mathbf{w}^T_c \mathbf{x} \right) - 1 = b' + \mathbf{w'}^T_c \mathbf{x} > 0$. This linear regression on the log odds ratio is exactly the form of Logistic Regression (the usual equation is recovered by solving $\log \frac{p}{1-p} = b + \mathbf{w'}^T \mathbf{x}$). The same can be shown for Multinomial Naive Bayes and Multinomial Logistic Regression.
 
-* For document classification, it is common to replace raw counts in Multinomial Naive Bayes with [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf){:.mdLink} weights.
+* For document classification, it is common to replace raw counts in Multinomial Naive Bayes with [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) weights.
 
-:information_source: <span class='resources'> Resources </span> : See section 3.5 of [K. Murphy's book](https://www.cs.ubc.ca/~murphyk/MLbook/){:.mdLink} for all the derivation steps and examples.
+:information_source: <span class='resources'> Resources </span> : See section 3.5 of [K. Murphy's book](https://www.cs.ubc.ca/~murphyk/MLbook/) for all the derivation steps and examples.
 
 ## Regression
 ### Decision Trees
-Decision trees are more often used for classification problems. I thus talk at length about them [here](#decision-trees-1){:.mdLink}.
+Decision trees are more often used for classification problems. I thus talk at length about them [here](#decision-trees-1).
 
 The 2 differences with decision trees for classification are:
-* **What error to minimize for an optimal split?** This replaces the impurity measure in the classification setting. A widely used error function for regression is the [sum of squared error](#mean-squared-error){:.mdLink}. We don't use the mean squared error so that the subtraction of the error after and before a split make sense. Sum of squared error for region $R$:
+* **What error to minimize for an optimal split?** This replaces the impurity measure in the classification setting. A widely used error function for regression is the [sum of squared error](#mean-squared-error). We don't use the mean squared error so that the subtraction of the error after and before a split make sense. Sum of squared error for region $R$:
 
 $$Error = \sum_{x^{(n)} \in R} (y^{(n)} - \bar{y}_{R})^2$$
 
@@ -502,4 +485,4 @@ Let's look at a simple plot to get a better idea of the algorithm:
 ![Building Decision Trees Regression](/images/blog/glossary-old/decision-tree-reg.gif){:width='477px' :height='327px'}
 </div>
 
-:x: Besides the disadvantages seen in the [decision trees for classification](#decision-trees-1){:.mdLink}, decision trees for regression suffer from the fact that it predicts a <span class='disadvantageText'> non smooth function  </span>.
+:x: Besides the disadvantages seen in the [decision trees for classification](#decision-trees-1), decision trees for regression suffer from the fact that it predicts a <span class='disadvantageText'> non smooth function  </span>.

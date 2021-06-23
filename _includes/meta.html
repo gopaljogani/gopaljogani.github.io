@@ -1,7 +1,8 @@
 <p class="page__meta" style="font-size:1em;display: inline;">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ current.date | date: "%B %d, %Y" }}</time>
-     
     {% include tag-list-only.html  %}
+    <br>
+    <span style="font-size:70%;"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</span>
     <!-- {% if site.data.ui-text[site.locale].meta_label %}
       <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
     {% endif %} -->

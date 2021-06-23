@@ -1,7 +1,7 @@
-{% if post.read_time %}
-  {% assign words = post.content | strip_html | number_of_words %}
-{% elsif page.read_time %}
-  {% assign words = page.content | strip_html | number_of_words %}
+{% if current.words %}
+  {% assign words = current.words %}
+{% elsif current.read_time %}
+  {% assign words = current.content | strip_html | number_of_words %}
 {% endif %}
 
 {% if site.words_per_minute %}

@@ -38,7 +38,7 @@
 ### Frequentist vs Bayesian
 * :mag: <span class='note'> Side Notes </span> :
 
-    * Don't get mistaken: using Bayes rule doesn't make you a Bayesian. As my previous ML professor [Mark Schmidt](https://www.cs.ubc.ca/~schmidtm/){:.mdLink} used to say: "If you're not integrating, you're not a Bayesian". :sweat_smile:
+    * Don't get mistaken: using Bayes rule doesn't make you a Bayesian. As my previous ML professor [Mark Schmidt](https://www.cs.ubc.ca/~schmidtm/) used to say: "If you're not integrating, you're not a Bayesian". :sweat_smile:
 
     * If you understood well the point of view of frequentist, you might be surprised of seeing something like $p(x\| \Theta)$, which means the "conditional distribution of *x* given $\Theta$". Indeed for frequentists $\Theta$ is not a random variable and thus conditioning on it makes no sense (there's a single value for $\Theta$ which may be unknown but is still fixed: it's value is thus not a condition). Frequentists would thus write such distributions: $p(x;\Theta)$ which means "the distribution of *x* parameterized by $\Theta$". In statistics and machine learning, most people use $\|$ for both cases. Mathematicians tend to differentiate between the notations. In this blog, I will use $\|$ for both cases in order to keep the same notation as other ML resources you will find. 
 
@@ -137,7 +137,7 @@
 </div>
 
 * :mag: <span class='note'> Side Notes </span> :
-    * There are extensions such as [Platt scaling](http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639){:.mdLink} to interpret SVM in a probabilistic manner.
+    * There are extensions such as [Platt scaling](http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1639) to interpret SVM in a probabilistic manner.
 
 #### Gaussian Process
   
@@ -562,7 +562,7 @@ ex:
 
 *Nota Bene: these terms are not always the most important ones but important ones I have encountered since my "migration" to machine learning / computer science in September 2016.*
 
-Thanks to [Mark Schmidt](https://www.cs.ubc.ca/~schmidtm/){:.mdLink}, my Machine Learning professor, who introduced me to this amazing field.
+Thanks to [Mark Schmidt](https://www.cs.ubc.ca/~schmidtm/), my Machine Learning professor, who introduced me to this amazing field.
 
 
 
@@ -570,7 +570,7 @@ Thanks to [Mark Schmidt](https://www.cs.ubc.ca/~schmidtm/){:.mdLink}, my Machine
 Additional ----
 #### Discriminative Classifiers
 
-I devoted a [section](#generative-vs-discriminative){:.mdLink} to discriminative classifiers but in summary these are the algorithms that directly learn a (decision) boundary between classes.
+I devoted a [section](#generative-vs-discriminative) to discriminative classifiers but in summary these are the algorithms that directly learn a (decision) boundary between classes.
 
 As a reminder these can be either:
 * **Probabilistic**: the algorithm has a probabilistic interpretation: it tries to model $p(y\|x)$.
