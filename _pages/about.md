@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Yet another aspiring machine learning researcher."
-excerpt: "Incoming "
+title: ""
+excerpt: ""
 author_profile: true
 no_meta: true
 redirect_from: 
@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-Hey :v: 
+Hello! 
 
 I'm (yet another) aspiring machine learning researcher. My interest lies in learning representations of data that provably improve the robustness and effectiveness of machine learning when the amount of available resources is scarce. I'm particularly interested in using statistical and information theoretic tools to do so.
 
