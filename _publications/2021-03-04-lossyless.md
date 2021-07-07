@@ -13,7 +13,7 @@ header:
   teaser: 'papers/lossyless/quantization_ivae_rot.png'
 paper: 'https://openreview.net/forum?id=GfCs5NhoR8Q'
 code: '' 
-link: ''
+link: 'https://github.com/YannDubs/lossyless'
 video: 'https://slideslive.at/38955214/lossy-compression-for-lossless-prediction?ref=search'
 categories:
   - Information Theory
