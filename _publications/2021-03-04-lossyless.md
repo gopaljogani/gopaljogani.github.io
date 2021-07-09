@@ -12,8 +12,8 @@ preprint: 'Neural Compression Workshop @ ICLR 2021'
 header: 
   teaser: 'papers/lossyless/quantization_ivae_rot.png'
 paper: 'https://openreview.net/forum?id=GfCs5NhoR8Q'
-code: '' 
-link: 'https://github.com/YannDubs/lossyless'
+code: 'https://github.com/YannDubs/lossyless' 
+link: ''
 video: 'https://slideslive.at/38955214/lossy-compression-for-lossless-prediction?ref=search'
 categories:
   - Information Theory
