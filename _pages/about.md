@@ -11,7 +11,7 @@ redirect_from:
 
 Hello!
 
-I'm a PhD student in machine learning at Stanford University funded by the [Knights-Hennessy Scholar](https://knight-hennessy.stanford.edu/)
+I'm a PhD student in machine learning at Stanford University funded by a [Knights-Hennessy Scholarship](https://knight-hennessy.stanford.edu/)
 
 My interest lies in learning representations of data that provide guarantees on downstream machine learning. For example, representations that provably improve the robustness, fairness, privacy, generalization or efficiency of machine learning. I'm particularly interested in using statistical and information theoretic tools to do so.
 
