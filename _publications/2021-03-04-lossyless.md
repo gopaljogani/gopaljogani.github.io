@@ -19,7 +19,7 @@ categories:
   - Information Theory
   - Compression
   - Representation Learning
-  - Symmetry
+  - Invariance
 ---
 
  <!-- reference dubois2021lossy  -->
