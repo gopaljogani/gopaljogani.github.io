@@ -282,6 +282,11 @@
 
 .page__taxonomy-item.SelectedPapers {
   background-color: $stanford-sky !important;
+
+  &:hover {
+    color: #fff;
+    background-color: $link-color !important;
+  }
 }
 
 /*
