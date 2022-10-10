@@ -15,7 +15,7 @@ author_profile: true
 {% for category in group_names %}
   {% if category == 'Selected Papers' %}
     {% assign posts = group_items[forloop.index0] | sort: 'date' | reverse %}
-    <h2 id="{{ 'Selected Papers' | slugify }}" class="archive__subtitle">'Selected Papers'</h2>
+    <h2 id="{{ 'Selected Papers' | slugify }}" class="archive__subtitle">{{ category }}</h2>
     {% for post in posts %}
     {% include archive-single-publication.html %}
     {% endfor %}
