@@ -16,7 +16,9 @@
   {% assign category_hashes = (page_categories | split: ',' | sort:0) %}
 
     <span class="page__taxonomy" itemprop="keywords">
-      <a href="{{ base_path }}{{ 'Selected Papers' | slugify | prepend: path_type | prepend: site.category_archive.path }}" class="page__taxonomy-item SelectedPapers" rel="tag">Selected Papers</a>
+      {% if 'Selected Papers' in current.categories %}
+        <a href="{{ base_path }}{{ 'Selected Papers' | slugify | prepend: path_type | prepend: site.category_archive.path }}" class="page__taxonomy-item SelectedPapers" rel="tag">Selected Papers</a>
+      {% endif %}
       {% for hash in category_hashes %}
         {% assign keyValue = hash | split: '#' %}
         {% capture category_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
