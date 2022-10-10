@@ -49,13 +49,14 @@
 }
 
 .page__content {
-
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
-  p, li, dl {
+  p,
+  li,
+  dl {
     font-size: 1em;
   }
 
@@ -220,7 +221,6 @@
   text-transform: uppercase;
 }
 
-
 /*
    Page meta
    ========================================================================== */
@@ -245,7 +245,6 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
-
 
 /*
    Page taxonomy
@@ -281,7 +280,9 @@
   }
 }
 
-
+.page__taxonomy-item.SelectedPapers {
+  color: $link-color !important;
+}
 
 /*
    Comments
@@ -378,7 +379,6 @@
   }
 }
 
-
 /*
    Related
    ========================================================================== */
@@ -406,8 +406,6 @@
   text-transform: uppercase;
 }
 
-
-
 /* makes a new link class*/
 .mdLink {
   color: #0085a1;
@@ -415,25 +413,25 @@
 .mdLink:hover,
 .mdLink:focus {
   text-decoration: underline;
-  color: #00596B;
+  color: #00596b;
 }
 
 /* for summary lnks*/
 .info {
-  color: #AAC3C6;
+  color: #aac3c6;
 }
 
 .infoLink {
-  color: #AAC3C6;
+  color: #aac3c6;
 }
 .infoLink:hover,
 .infoLink:focus {
   text-decoration: underline;
-  color: #00596B;
+  color: #00596b;
 }
 
 /* Lists : add more space between */
-body li{
+body li {
   margin: 10px 0;
 }
 
@@ -443,196 +441,203 @@ table {
   border-collapse: collapse;
   margin: 0 auto;
   width: 100%;
- }
+}
 
 table tr {
   border-top: 1px solid #cccccc;
   background-color: white;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 table tr:nth-child(2n) {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+}
 table tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
   margin: 0;
-  padding: 6px 13px; }
+  padding: 6px 13px;
+}
 table tr td {
   border: 1px solid #cccccc;
   margin: 0;
-  padding: 6px 13px; }
-table tr th :first-child, table tr td :first-child {
-  margin-top: 0; }
-table tr th :last-child, table tr td :last-child {
-  margin-bottom: 0; }
+  padding: 6px 13px;
+}
+table tr th :first-child,
+table tr td :first-child {
+  margin-top: 0;
+}
+table tr th :last-child,
+table tr td :last-child {
+  margin-bottom: 0;
+}
 
 /* special words for special types */
 /* Intuition */
 .intuition {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #9B01DE;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #9b01de;
 }
 
 .intuitionText {
-    color: #9B01DE;
+  color: #9b01de;
 }
 
 .intuitionBoxed {
-    border: 1px dashed #9B01DE ;
-    padding: 17px;
+  border: 1px dashed #9b01de;
+  padding: 17px;
 }
 
 /* Example */
 
 .example {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #9DCB05;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #9dcb05;
 }
 
 .exampleText {
-    color: #9DCB05;
+  color: #9dcb05;
 }
 
 .exampleBoxed {
-    border: 1px dashed #9DCB05 ;
-    padding: 17px;
+  border: 1px dashed #9dcb05;
+  padding: 17px;
 }
 
 /* Advantage */
 
 .advantage {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #0DBF01;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0dbf01;
 }
 
 .advantageText {
-    color: #0DBF01;
+  color: #0dbf01;
 }
 
 .advantageBoxed {
-    border: 1px dashed #0DBF01 ;
-    padding: 17px;
+  border: 1px dashed #0dbf01;
+  padding: 17px;
 }
 
 /* Disadvantage */
 
 .disadvantage {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #ED0101;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ed0101;
 }
 
 .disadvantageText {
-    color: #ED0101;
+  color: #ed0101;
 }
 
 .disadvantageBoxed {
-    border: 1px dashed #ED0101 ;
-    padding: 17px;
+  border: 1px dashed #ed0101;
+  padding: 17px;
 }
 
 /* Practice */
 
 .practice {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #4997FE;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #4997fe;
 }
 
 .practiceText {
-    color: #4997FE;
+  color: #4997fe;
 }
 
 .practiceBoxed {
-    border: 1px dashed #4997FE ;
-    padding: 17px;
+  border: 1px dashed #4997fe;
+  padding: 17px;
 }
 
 /* Notes */
 
 .note {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #C89917;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #c89917;
 }
 
 .noteText {
-    color: #C89917;
+  color: #c89917;
 }
 
 .noteBoxed {
-    border: 1px dashed #C89917 ;
-    padding: 17px;
+  border: 1px dashed #c89917;
+  padding: 17px;
 }
 
 /* Resources */
 
 .resources {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #C4C4C4;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #c4c4c4;
 }
 
 .resourcesText {
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 .resourcesBoxed {
-    border: 1px dashed #C4C4C4 ;
-    padding: 17px;
+  border: 1px dashed #c4c4c4;
+  padding: 17px;
 }
 
 /* Compare */
 
 .compare {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #A47676
+  text-decoration: underline;
+  font-weight: bold;
+  color: #a47676;
 }
 
 .compareText {
-    color: #A47676;
+  color: #a47676;
 }
 
 .compareBoxed {
-    border: 1px dashed #A47676;
-    padding: 17px;
+  border: 1px dashed #a47676;
+  padding: 17px;
 }
-
 
 /* images */
-body img:not(.emoji){
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+body img:not(.emoji) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.miniWrap{
-  max-width:200px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+.miniWrap {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.smallWrap{
-  max-width:300px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+.smallWrap {
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mediumWrap{
-  max-width:477px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+.mediumWrap {
+  max-width: 477px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Quick annotations for algorithms */
-.centerContainer{
+.centerContainer {
   text-align: center;
   float: none;
   margin: 0 auto;
@@ -655,7 +660,7 @@ blockquote cite {
 }
 
 /* For Dropdown menus */
-details summary{
+details summary {
   text-decoration: underline;
   font-weight: bold;
   color: #999999;
@@ -663,7 +668,7 @@ details summary{
 
 details summary:hover,
 details summary:focus,
-details[open] summary{
+details[open] summary {
   text-decoration: underline;
   color: black;
 }

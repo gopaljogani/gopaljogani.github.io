@@ -22,6 +22,7 @@ categories:
   - Invariance
   - Self-Supervised Learning
   - Vision
+  - Selected Papers 
 ---
 
  <!-- reference dubois2021lossy  -->
