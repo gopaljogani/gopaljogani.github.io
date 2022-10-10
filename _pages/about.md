@@ -11,13 +11,13 @@ redirect_from:
 
 Hello!
 
-I'm a PhD student in machine learning at Stanford University funded by a [Knights-Hennessy Scholarship](https://knight-hennessy.stanford.edu/)
+I'm a PhD student in machine learning at Stanford University co-advised by [Percy Liang](https://cs.stanford.edu/~pliang/) and [Tatsu Hashimoto](https://thashim.github.io/) and funded by a [Knights-Hennessy Scholarship](https://knight-hennessy.stanford.edu/). 
 
 My interest lies in learning representations of data that provide guarantees on downstream machine learning. For example, representations that provably improve the robustness, fairness, privacy, generalization or efficiency of machine learning. I'm particularly interested in using statistical and information theoretic tools to do so.
 
-Before starting my PhD I worked on similar research projects at the [Vector Institute](https://vectorinstitute.ai/) with [Chris Maddison](https://www.cs.toronto.edu/~cmaddis/) and also as part of my [Facebook AI Residency](https://research.fb.com/programs/facebook-ai-residency-program/). Before moving to research, I worked on more applied AI projects at different startups. For example, developing algorithms at [Grab](https://en.wikipedia.org/wiki/Grab_(company)) to analyse text in under-research languages (Thai, Khmer, Burmese, ...); or predicting room occupancy at [SBS](https://sensiblebuildingscience.com/) to decrease the carbon footprint of large buildings in Vancouver.
+Before starting my PhD I worked on similar research projects at the [Vector Institute](https://vectorinstitute.ai/) with [Chris Maddison](https://www.cs.toronto.edu/~cmaddis/) and also as part of my [Facebook AI Residency](https://research.fb.com/programs/facebook-ai-residency-program/). Before moving to research, I worked on more applied AI projects at different startups. For example, developing algorithms at [Grab](https://en.wikipedia.org/wiki/Grab_(company)) to analyze text in under-research languages (Thai, Khmer, Burmese, ...); or predicting room occupancy at [SBS](https://sensiblebuildingscience.com/) to decrease the carbon footprint of large buildings in Vancouver.
 
-Outside of machine learning I spend my time playing sports with friends (:ski:,:mountain:,:badminton:,:basketball:,:volleyball:,:runner:), travelling, or reading about geopolitics.
+Outside of machine learning I spend my time playing sports with friends (:ski:,:mountain:,:badminton:,:basketball:,:volleyball:,:runner:), traveling, or reading about geopolitics.
 
 
 <!-- News
