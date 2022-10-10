@@ -51,7 +51,6 @@
 
 /* remove border*/
 .page__content {
-
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
@@ -105,13 +104,11 @@
   }
 }
 
-
 /*
    List view
    ========================================================================== */
 
 .list__item {
-
   .page__meta {
     margin: 0 0 4px;
   }
@@ -159,7 +156,6 @@
     }
   }
 }
-
 
 /*
    Features
@@ -254,9 +250,9 @@
 }
 
 // this is already in custom but for some reason not seen
-.zoom{
+.zoom {
   /* default button */
-  
+
   &:hover {
     transform: scale(1.25);
   }
