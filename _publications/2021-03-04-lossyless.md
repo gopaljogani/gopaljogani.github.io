@@ -20,6 +20,8 @@ categories:
   - Compression
   - Representation Learning
   - Invariance
+  - Self-Supervised Learning
+  - Vision
 ---
 
  <!-- reference dubois2021lossy  -->
