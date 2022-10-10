@@ -12,11 +12,14 @@ author_profile: true
 
 {% include group-by-array collection=site.publications field="categories" %}
 
-{% assign selected_papers_index = group_names | indexOf: 'Selected Papers' %}
-{% assign posts = group_items[selected_papers_index] | sort: 'date' | reverse %}
-<h2 id="{{ 'Selected Papers' | slugify }}" class="archive__subtitle">'Selected Papers'</h2>
-{% for post in posts %}
-{% include archive-single-publication.html %}
+{% for category in group_names %}
+  {% if category != 'Selected Papers' %}
+    {% assign posts = group_items[forloop.index0] | sort: 'date' | reverse %}
+    <h2 id="{{ 'Selected Papers' | slugify }}" class="archive__subtitle">'Selected Papers'</h2>
+    {% for post in posts %}
+    {% include archive-single-publication.html %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}
 
 {% for category in group_names %}
