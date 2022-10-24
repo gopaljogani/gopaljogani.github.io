@@ -12,6 +12,7 @@ preprint: 'Arxiv'
 header: 
   teaser: 'papers/captionworth/teaser_captionworth.png'
 paper: 'https://arxiv.org/abs/2207.07635'
+twitter: "https://twitter.com/ShibaniSan/status/1554534234143932417?s=20&t=IWsl3Bgn8Gqmp_hITqpqug"
 code: '' 
 link: ''
 video: ''
