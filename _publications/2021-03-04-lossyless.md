@@ -13,6 +13,7 @@ header:
   teaser: 'papers/lossyless/quantization_ivae_rot.png'
 paper: 'https://arxiv.org/abs/2106.10800'
 code: 'https://github.com/YannDubs/lossyless' 
+twitter: 'https://twitter.com/yanndubs/status/1407370279450447878?s=20&t=IWsl3Bgn8Gqmp_hITqpqug' 
 link: ''
 video: 'https://slideslive.at/38955214/lossy-compression-for-lossless-prediction?ref=search'
 categories:
