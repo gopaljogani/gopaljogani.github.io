@@ -20,7 +20,7 @@ On the research side, I've worked extensively on **learning representations** of
 For example, I've worked on such projects at the [Vector Institute](https://vectorinstitute.ai/) with [Chris Maddison](https://www.cs.toronto.edu/~cmaddis/) and as part of my [Facebook AI Residency](https://research.fb.com/programs/facebook-ai-residency-program/). 
 On the entrepreneurial side, I've worked on applied AI projects at different startups. For example, developing algorithms at [Grab](https://en.wikipedia.org/wiki/Grab_(company)) to analyze text in under-research languages (Thai, Khmer, Burmese, ...); or predicting room occupancy at [SBS](https://sensiblebuildingscience.com/) to decrease the carbon footprint of large buildings in Vancouver.
 
-Outside of machine learning I spend my time playing sports with friends (:ski:,:mountain:,:badminton:,:basketball:,:volleyball:,:runner:), traveling, or reading about geopolitics.
+Outside of machine learning I spend my time playing sports with friends (:ski:,:mountain:,:badminton:,:volleyball:,:runner:), traveling, or reading about geopolitics.
 
 
 <!-- News
