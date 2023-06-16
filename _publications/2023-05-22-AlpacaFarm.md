@@ -8,10 +8,10 @@ permalink: /publication/AlpacaFarm
 tldr: 'AlpacaFarm replicates the RLHF process at a fraction of the time (<24h) and cost ($<200), enabling the research community to advance instruction following research.'
 date: 2023-05-22
 venue: ''
-preprint: '' 
+preprint: 'Arxiv' 
 header: 
   teaser: 'papers/alpaca/AlpacaFarm.png'
-paper: ''
+paper: 'https://arxiv.org/abs/2305.14387'
 code: 'https://github.com/tatsu-lab/alpaca_farm' 
 twitter: "https://twitter.com/tatsu_hashimoto/status/1661047181342826497"
 link: 'https://crfm.stanford.edu/2023/05/22/alpaca-farm.html'

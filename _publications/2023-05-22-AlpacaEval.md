@@ -8,7 +8,7 @@ permalink: /publication/AlpacaEval
 tldr: 'A validated automatic evaluator for instruction-following language models. High-quality, cheap, and fast.'
 date: 2023-06-08
 venue: ''
-preprint: '' 
+preprint: 'GitHub' 
 header: 
   teaser: 'papers/alpaca/AlpacaEval.png'
 paper: ''
