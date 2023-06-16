@@ -7,8 +7,8 @@ collection: publications
 permalink: /publication/captionworth
 tldr: 'Our work performs a systematic investigation into whether additional language supervision (in CLIP) helps models learn more transferrable representations.'
 date: 2022-07-15
-venue: ''
-preprint: 'Arxiv' 
+venue: 'ICLR 2022'
+preprint: '' 
 header: 
   teaser: 'papers/captionworth/teaser_captionworth.png'
 paper: 'https://arxiv.org/abs/2207.07635'

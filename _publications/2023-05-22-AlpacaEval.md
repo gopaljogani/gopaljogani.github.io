@@ -1,6 +1,6 @@
 ---
 title: "AlpacaEval: An Automatic Evaluator of Instruction-following Models"
-authors_before: "X. Li*, T. Zhang*"
+authors_before: "X. Li*, T. Zhang*, "
 authors_after: "*, R. Taori*, I. Gulrajani, C. Guestrin, P. Liang, T. Hashimoto"
 award: ""
 collection: publications
