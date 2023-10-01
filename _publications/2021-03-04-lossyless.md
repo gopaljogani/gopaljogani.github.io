@@ -2,7 +2,7 @@
 title: "Lossy Compression for Lossless Prediction"
 authors_before: ""
 authors_after: ", B. Bloem-Reddy, K. Ullrich, C. J. Maddison"
-award: "Spotlight Presentation"
+award: "Spotlight Presentation" # < 3%>
 collection: publications
 permalink: /publication/lossyless_workshop
 tldr: 'We formalize compression with respect to ML algorithms rather than human perception.'
