@@ -12,8 +12,7 @@ redirect_from:
 Hello!
 
 I'm a PhD student in machine learning at Stanford University co-advised by [Percy Liang](https://cs.stanford.edu/~pliang/) and [Tatsu Hashimoto](https://thashim.github.io/) and funded by a [Knights-Hennessy Scholarship](https://knight-hennessy.stanford.edu/). 
-
-I strive to build AI technologies that are simultaneously open/accessible to all and safe/ethical. 
+<!-- I strive to build AI technologies that are simultaneously open/accessible to all and safe/ethical.  -->
 
 Before starting my PhD, I traveled around trying to reconcile my passion for machine learning research and my entrepreneurial mindset.
 On the research side, I've worked extensively on learning representations of data that provide guarantees (fairness, robustness, etc) on downstream machine learning.

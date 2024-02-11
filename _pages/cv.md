@@ -28,10 +28,10 @@ Education 🎓
       <b style="font-size: 130%;">Stanford University</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2021 -</span>
     </p>
-    PhD Machine Learning
-    <!-- <div style="color:#7a7a7a">
-      Supervised by Yee Whye Teh and Arnaud Doucet
-    </div> -->
+    PhD Computer Science (AI)
+    <div style="color:#7a7a7a">
+      Co-advised by Tatsu Hashimoto and Percy Liang
+    </div>
   </div>
 </div>
 <hr style="height:1em; margin:0em; visibility:hidden;" />
@@ -48,10 +48,10 @@ Education 🎓
       <b style="font-size: 130%;">University of Cambridge</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">2018 - 2019</span>
     </p>
-    MPhil in Machine Learning 
-    <div style="color:#7a7a7a">
-      Distinction
-    </div>
+    MPhil in Machine Learning
+    <!-- <div style="color:#7a7a7a">
+      Advised by 
+    </div> -->
   </div>
 </div>
 <hr style="height:1em; margin:0em; visibility:hidden;" />
@@ -70,9 +70,9 @@ Education 🎓
       <span style="float:right; font-size:80%; color:#7a7a7a;">2014 - 2017</span>
     </p>
     BSc Biomedical Engineering
-    <div style="color:#7a7a7a">
+    <!-- <div style="color:#7a7a7a">
       Rank: 1/198 students
-    </div>
+    </div> -->
   </div>
 </div>
  <hr style="height:2em; margin:0em; visibility:hidden;" />
@@ -174,7 +174,7 @@ Work experience 💼
     </p>
     Research Assistant
     <div style="color:#7a7a7a">
-      I developed an algorithm that predicted room occupancy to develop smart heating
+      I developed an algorithm that predicts room occupancy to develop smart heating
     </div>
   </div>
 </div>
@@ -194,7 +194,7 @@ Work experience 💼
     </p>
     Research Assistant (part-time)
     <div style="color:#7a7a7a">
-      I developed an algorithm used to analyze mutations of 183 infants suffering from Sepsis
+      I developed an algorithm that analyzes mutations of 183 infants suffering from Sepsis
     </div>
   </div>
 </div>
@@ -214,6 +214,12 @@ Awards 🌟
     <span style="float:right; font-size:80%; color:#7a7a7a;">2018</span> <br>
     <i>MPhil funding</i>
   </li>
+<!-- 
+  <li>
+    <b>Valedictorian </b>
+    <span style="float:right; font-size:80%; color:#7a7a7a;">2018</span> <br>
+    <i>MPhil funding</i>
+  </li> -->
 
   <!-- <li>
     <b>Silicon Valley Startup Camp</b>
@@ -223,7 +229,7 @@ Awards 🌟
 
 </ul>
 
- <hr style="height:2em; margin:0em; visibility:hidden;" />
+ <!-- <hr style="height:2em; margin:0em; visibility:hidden;" />
   
 Invited Talks 🏛️
 ======
@@ -260,7 +266,7 @@ Teaching 👨‍🏫
     <span style="float:right; font-size:80%; color:#7a7a7a;">EPFL, 2015</span> <br>
   </li>
 </ul>
-  
+   -->
 <!-- Academic Services 📚
 ======
 <ul>
