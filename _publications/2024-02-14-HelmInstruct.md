@@ -7,7 +7,7 @@ collection: publications
 permalink: /publication/HelmInstruct
 tldr: 'Multidimensional evaluation of instruction following LLM with absolute scores.'
 date: 2024-02-14
-venue: 'ICLR'
+venue: 'GitHub'
 preprint: '' 
 header: 
   teaser: 'papers/helminstruct/helminstruct.png'
