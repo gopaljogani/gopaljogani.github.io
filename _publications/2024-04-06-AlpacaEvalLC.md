@@ -1,7 +1,7 @@
 ---
 title: "Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators"
 authors_before: ""
-authors_after: "B. Galambosi, P. Liang, T. Hashimoto"
+authors_after: ", B. Galambosi, P. Liang, T. Hashimoto"
 award: ""
 collection: publications
 permalink: /publication/AlpacaEvalLC
