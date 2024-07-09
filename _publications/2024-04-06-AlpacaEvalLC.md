@@ -8,7 +8,7 @@ permalink: /publication/AlpacaEvalLC
 tldr: 'We decrease the bias of AlpacaEval for longer outputs using regression analysis.'
 date: 2024-04-06
 venue: ''
-preprint: 'ArXiv' 
+preprint: 'COLM 2024' 
 header: 
   teaser: 'papers/alpaca/AlpacaEvalLC.png'
 paper: ''
