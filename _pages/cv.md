@@ -16,69 +16,68 @@ Updated June 2021.
 Education 🎓
 ======
 
-<!-- PhD -->
+<!-- M.Sc -->
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/stanford.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/JGU.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">Stanford University</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">2021 -</span>
+      <b style="font-size: 130%;">Johannes Gutenberg-Universität Mainz</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2024</span>
     </p>
-    PhD Computer Science (AI)
+    M.Sc Physics (Research-Oriented)
     <div style="color:#7a7a7a">
-      Co-advised by Tatsu Hashimoto and Percy Liang
     </div>
   </div>
 </div>
 <hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- MS -->
+<!-- M.Sc -->
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/cambridge.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/KSV.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">University of Cambridge</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">2018 - 2019</span>
+      <b style="font-size: 130%;">Kadi Sarva Vishwavidyalaya</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2017 </span>
     </p>
-    MPhil in Machine Learning
-    <!-- <div style="color:#7a7a7a">
-      Advised by 
-    </div> -->
+    M.Sc Physics
+    <div style="color:#7a7a7a">
+     
+    </div>
   </div>
 </div>
 <hr style="height:1em; margin:0em; visibility:hidden;" />
 
 
-<!-- BSc -->
+<!-- B.Sc -->
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/epfl.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/GU.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">EPFL</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">2014 - 2017</span>
+      <b style="font-size: 130%;">Gujarat University</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">2015 </span>
     </p>
-    BSc Biomedical Engineering
-    <!-- <div style="color:#7a7a7a">
-      Rank: 1/198 students
-    </div> -->
+    B.Sc Physics
+    <div style="color:#7a7a7a">
+      
+    </div>
   </div>
 </div>
- <hr style="height:2em; margin:0em; visibility:hidden;" />
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
 
-Work experience 💼
+Research experience 💼
 ======
 <!-- Vector -->
 <div style="display:flex;">
