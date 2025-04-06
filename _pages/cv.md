@@ -49,7 +49,6 @@ Education 🎓
     </p>
     M.Sc Physics
     <div style="color:#7a7a7a">
-     
     </div>
   </div>
 </div>
@@ -70,7 +69,6 @@ Education 🎓
     </p>
     B.Sc Physics
     <div style="color:#7a7a7a">
-      
     </div>
   </div>
 </div>
