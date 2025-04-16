@@ -1,38 +1,36 @@
-<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-  <h3 class="archive__item-title" itemprop="headline">
-    {% if post.paper %}
-      <a href="{{ post.paper }}" rel="permalink">{{ post.title }}</a>
-    {% else %}
-      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-    {% endif %}
-  </h3>
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
 
-  {% if post.tldr %}
-    <p><strong>TLDR:</strong> {{ post.tldr }}</p>
+{% include base_path %}
+
+<p>Last Updated: April 2025.</p>
+{% if site.category_archive.path %}
+<b>Filter:</b> {% include all-categories.html %}
+{% endif %}
+
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.publications reversed %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
+  {% include archive-single-publication.html %}
+{% endfor %}
 
-  {% if post.authors_before or post.author or post.authors_after %}
-    <p class="archive__item-excerpt">
-      {{ post.authors_before }}{% if post.author %} {{ post.author }}{% endif %}{{ post.authors_after }}
-    </p>
-  {% endif %}
 
-  {% if post.venue %}
-    <p class="archive__item-venue">{{ post.venue }}</p>
-  {% endif %}
+<!-- ## 2021
 
-  <p>
-    {% if post.paper %}
-      <a href="{{ post.paper }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Paper</a>
-    {% endif %}
-    {% if post.code %}
-      <a href="{{ post.code }}"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Code</a>
-    {% endif %}
-    {% if post.video %}
-      <a href="{{ post.video }}"><i class="fas fa-fw fa-video" aria-hidden="true"></i> Video</a>
-    {% endif %}
-    {% if post.link %}
-      <a href="{{ post.link }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Link</a>
-    {% endif %}
-  </p>
-</article>
+- **Lossy Compression for Lossless Prediction** \\
+  **Y. Dubois**, B. Bloem-Reddy, K. Ullrich, C. J. Maddison \\
+  Neural Compression Workshop @ ICLR 2021  \\
+  :tada: <span style="color:red"> Oral presentation</span>  \\
+  TLDR: We formalize compression with respect to ML algorithms rather than human perception. \\
+  <a href="https://doi.org/10.1017/psrm.2019.23"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a> 
+  <a href="https://github.com/jayrobwilliams/Peace-Agreement-Strength"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
+
+$$e^2$$ -->
