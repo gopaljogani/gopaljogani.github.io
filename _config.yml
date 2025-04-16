@@ -76,7 +76,7 @@ social:
     - "https://www.linkedin.com/in/jigar-patel-3820ba11a/"
 
 
-# Analytics
+# AnalyticsY. Dubois
 analytics:
   provider               :  
   google:
@@ -85,7 +85,7 @@ analytics:
 
 # Site Author
 author:
-  name             : *name
+  name             : J. Patel
   avatar           : ""
   bio              : ""
   location         : "Germany"
