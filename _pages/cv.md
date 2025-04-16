@@ -75,6 +75,83 @@ Education 🎓
 <hr style="height:1em; margin:0em; visibility:hidden;" />
 
 
+
+### Project
+
+<!-- LLM from Scratch Project -->
+<div style="display:flex;">
+
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/llm.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">LLM from Scratch (Independent Project)</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Mar 2025 – Present</span>
+    </p>
+    Self-Driven Research
+    <ul style="margin-top: 5px; padding-left: 1.2em; color:#7a7a7a">
+      <li>Building a Transformer-based Large Language Model using PyTorch, based on Dr. Sebastian Raschka’s methodology.</li>
+      <li>Implemented core components: tokenization, attention mechanisms, training loop, and fine-tuning pipeline.</li>
+      <li>Exploring extensions into multimodal AI and intelligent agent workflows.</li>
+    </ul>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+<!-- JGU Mainz Master Thesis -->
+<div style="display:flex;">
+
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;"><a href="https://www.uni-mainz.de/" target="_blank" style="color: black;">Johannes Gutenberg University Mainz</a></b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Sep 2023 - Sep 2024</span>
+    </p>
+    Master Thesis Project
+    <div style="color:#7a7a7a">
+      <i>Supervisor: Prof. Dr. Wolfgang Gradl</i>
+    </div>
+    <div>
+      Systematic studies on the signal yield determination in the decay <b>B → K<sup>*</sup>(892)(→ Kπ)ℓ<sup>+</sup>ℓ<sup>−</sup></b> at Belle II 
+      (<a href="https://www.dropbox.com/scl/fi/ac03vek7c21n0boqmjn9f/JGU_MT_Final.pdf?rlkey=34ryj05t0v9nmdlkft403lghk&st=sjq55f1q&dl=0" target="_blank" style="color:RoyalBlue;">Thesis</a>)<br/>
+      Developed a fit model for the decay channel focusing on precise signal and background separation across various <i>q²</i> regions. Applied <i>q²</i> vetoes to reduce contamination from resonances like J/ψ and ψ(2S). Validated using control channels and tested robustness with toy Monte Carlo studies. Demonstrated model effectiveness on realistic Belle II data, providing groundwork for future high-luminosity rare decay studies.
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+<!-- IPR Master Thesis -->
+<div style="display:flex;">
+
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/ipr.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;"><a href="https://www.ipr.res.in/" target="_blank" style="color: black;">Institute for Plasma Research (IPR)</a></b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Apr 2016 - Apr 2017</span>
+    </p>
+    Master Thesis Project
+    <div style="color:#7a7a7a">
+      <i>Supervisor: Dr. Balasubramanian C.</i>
+    </div>
+    <div>
+      Synthesis of SiC 1D nanostructure by plasma arc method 
+      (<a href="https://www.dropbox.com/scl/fi/2reem9g2byskaq7mjzi6v/KSV-Master-Thesis.pdf?rlkey=k0ld4mff2rjxqk37s55aoz0eb&st=64a9llzx&dl=0" target="_blank" style="color:RoyalBlue;">Thesis</a>)<br/>
+      Used thermal plasma arc discharge to synthesize 1D SiC nanostructures, with plasma current playing a key role in morphology. XRD confirmed crystal structure; TEM revealed SiC nanorods/nanowires. EDAX and elemental mapping validated silicon and carbon distribution in samples.
+    </div>
+  </div>
+</div>
+<hr style="height:2em; margin:0em; visibility:hidden;" />
+
+
+
 ### Research Experience 💼
 
 <!-- TU Dortmund -->
@@ -144,7 +221,7 @@ Education 🎓
 <hr style="height:2em; margin:0em; visibility:hidden;" />
 
   
-Awards 🌟
+Awards 
 ======
 <ul>
   <li>
