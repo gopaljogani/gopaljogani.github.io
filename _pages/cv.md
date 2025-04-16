@@ -77,125 +77,115 @@ Education 🎓
 
 Research experience 💼
 ======
-<!-- Vector -->
+
+<!-- TU Dortmund -->
 <div style="display:flex;">
-
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/vector.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/dortmund.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
-
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">Vector Institute</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Nov 2020 - Aug 2021</span>
+      <b style="font-size: 130%;">TU Dortmund University</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Dec 2024 - Present</span>
     </p>
-    Research Intern
+    Intern
     <div style="color:#7a7a7a">
-      Research on representation learning and information theory
+      Calibration of boosted W/Z boson tagging algorithms in ATLAS using 13 TeV pp collisions
     </div>
   </div>
 </div>
- <hr style="height:1em; margin:0em; visibility:hidden;" />
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- resident -->
+<!-- JGU Mainz: SiPM -->
 <div style="display:flex;">
-
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/facebook.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
-
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">Facebook AI Research</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Sep 2019 - Sep 2020</span>
-    </p>
-    Facebook AI Resident
-    <div style="color:#7a7a7a">
-      Research on representation learning
-    </div>
-  </div>
-</div>
- <hr style="height:1em; margin:0em; visibility:hidden;" />
-
-<!-- UVA -->
-<div style="display:flex;">
-
-  <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/uva.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
-  </div>
-
-  <div style="flex:4;">
-    <p style="margin:0px">
-      <b style="font-size: 130%;">The University of Amsterdam</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">May 2018 - Oct 2018</span>
-    </p>
-    Research Intern
-    <div style="color:#7a7a7a">
-      Research on extrapolation and NLP
-    </div>
-  </div>
-</div>
- <hr style="height:1em; margin:0em; visibility:hidden;" />
-
-<!-- Grab -->
-<div style="display:flex;">
-
-  <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/grab.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
-  </div>
-
-  <div style="flex:4;">
-    <p style="margin:0px">
-      <b style="font-size: 130%;">Grab</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Oct 2017 - Apr 2018</span>
-    </p>
-    Data Scientist
-    <div style="color:#7a7a7a">
-      I developed an algorithm that analysed reviews from 40M users in under-researched languages, e.g., Thai, Vietnamese, Burmese
-    </div>
-  </div>
-</div>
- <hr style="height:1em; margin:0em; visibility:hidden;" />
-
-<!-- UBC -->
-<div style="display:flex;">
-
-  <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/ubc.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
-  </div>
-
-  <div style="flex:4;">
-    <p style="margin:0px">
-      <b style="font-size: 130%;">SBS & University of British Columbia</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Mar 2017 - Jun 2017</span>
+      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Jul 2023 - Aug 2024</span>
     </p>
     Research Assistant
     <div style="color:#7a7a7a">
-      I developed an algorithm that predicts room occupancy to develop smart heating
+      Studied temperature-dependent behavior of SiPMs for Active Polarized Proton Target
     </div>
   </div>
 </div>
- <hr style="height:1em; margin:0em; visibility:hidden;" />
+<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- EPFL -->
+<!-- JGU Mainz: tau SPECT -->
 <div style="display:flex;">
-
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/epfl.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
-
   <div style="flex:4;">
     <p style="margin:0px">
-      <b style="font-size: 130%;">EPFL</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Feb 2016 - Sep 2016</span>
+      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Aug 2022 - Feb 2023</span>
     </p>
-    Research Assistant (part-time)
+    Research Assistant
     <div style="color:#7a7a7a">
-      I developed an algorithm that analyzes mutations of 183 infants suffering from Sepsis
+      Supported trigger data analysis and hardware integration for the tau SPECT experiment
     </div>
   </div>
 </div>
- <hr style="height:2em; margin:0em; visibility:hidden;" />
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+<!-- JGU Mainz: HGTD -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Mar 2022 - Sep 2022</span>
+    </p>
+    Research Assistant
+    <div style="color:#7a7a7a">
+      Evaluated flexible PCB design for ATLAS HGTD under geometrical and thermal conditions
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+<!-- JGU Mainz: JUNO -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Aug 2021 - Feb 2022</span>
+    </p>
+    Research Assistant
+    <div style="color:#7a7a7a">
+      Tested RTD sensors and supported DAQ software using LabVIEW for the JUNO experiment
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+<!-- HIM Mainz: PANDA EMC -->
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/him.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Helmholtz Institute Mainz</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Jun 2021 - Sep 2021</span>
+    </p>
+    Research Assistant
+    <div style="color:#7a7a7a">
+      Contributed to assembly and setup of PANDA EMC for FAIR experiment in Darmstadt
+    </div>
+  </div>
+</div>
+<hr style="height:2em; margin:0em; visibility:hidden;" />
+
   
 Awards 🌟
 ======
