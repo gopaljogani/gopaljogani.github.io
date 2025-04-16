@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Jigar Patel"
 title_separator          : "-"
 name                     : &name "Jigar Patel"
-description              : &description "Student"
+description              : &description ""
 url                      : https://crea-troy.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/crea-troy"
@@ -86,8 +86,8 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : ""
-  bio              : ""
+  avatar           : 
+  bio              : 
   location         : "Germany"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
