@@ -25,7 +25,12 @@
     </div>
     <div style="flex:4;">
       <b class="archive__item-subtitle" itemprop="headline">{{ title }}</b>
-      <p class="archive__item-publication" itemprop="description">{{ post.authors_before }}<b>Y. Dubois{% if post.is_cofirst %}*{% endif %}</b>{{ post.authors_after }}</p>
+      <p class="archive__item-publication" itemprop="description">
+        {% if post.authors_before %}{{ post.authors_before }}{% endif %}
+        {% if post.author %}<b>{{ post.author }}{% if post.is_cofirst %}*{% endif %}</b>{% endif %}
+        {% if post.authors_after %}{{ post.authors_after }}{% endif %}
+      </p>
+
       {% if post.venue and post.venue != "" %}<span class="archive__item-publication" itemprop="description" style="color:#175E54">{{ post.venue }}</span>
       {% else %}<span class="archive__item-publication" itemprop="description">{{ post.preprint }}</span>{% endif %}
       {% if post.award and post.award != "" %}<span class="archive__item-publication" itemprop="description" style="color:red">{{ post.award }} 🎉</span>{% endif %}
