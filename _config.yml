@@ -26,7 +26,7 @@ search                   : true # #default false
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "yanndubs"
+    shortname            : "Jigar"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -73,7 +73,7 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - ""
-    - ""
+    - "https://www.linkedin.com/in/jigar-patel-3820ba11a/"
 
 
 # Analytics
@@ -107,7 +107,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : #duboisyann
+  linkedin         : Jigar
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
