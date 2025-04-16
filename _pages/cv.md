@@ -75,14 +75,15 @@ Education 🎓
 <hr style="height:1em; margin:0em; visibility:hidden;" />
 
 
-Research experience 💼
-======
+### Research Experience 💼
 
 <!-- TU Dortmund -->
 <div style="display:flex;">
+
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/dortmund.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/tudortmund.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
+
   <div style="flex:4;">
     <p style="margin:0px">
       <b style="font-size: 130%;">TU Dortmund University</b>
@@ -90,89 +91,44 @@ Research experience 💼
     </p>
     Intern
     <div style="color:#7a7a7a">
-      Calibration of boosted W/Z boson tagging algorithms in ATLAS using 13 TeV pp collisions
+      Working on calibration of boosted W/Z boson tagging algorithms using ATLAS 13 TeV data. Focus on deriving scale factors and improving jet substructure-based tagging performance.
     </div>
   </div>
 </div>
 <hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- JGU Mainz: SiPM -->
+<!-- JGU Mainz -->
 <div style="display:flex;">
+
   <div style="flex:0.5; padding-right:5%">
     <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
+
   <div style="flex:4;">
     <p style="margin:0px">
       <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Jul 2023 - Aug 2024</span>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Aug 2021 - Aug 2024</span>
     </p>
-    Research Assistant
+    Research Assistant (various projects)
     <div style="color:#7a7a7a">
-      Studied temperature-dependent behavior of SiPMs for Active Polarized Proton Target
+      <ul style="margin: 0.5em 0 0 1em; padding: 0;">
+        <li><b>Active Polarized Proton Target:</b> Studied SiPM behavior under varying temperatures to optimize detector sensitivity.</li>
+        <li><b>τ SPECT Experiment:</b> Data analysis and hardware integration for UCN lifetime studies.</li>
+        <li><b>ATLAS HGTD:</b> Evaluated flexible PCB stability under thermal/geometrical stress for precision timing detectors.</li>
+        <li><b>JUNO Neutrino Experiment:</b> Validated RTD sensors and developed LabVIEW DAQ tools for integration with liquid scintillator systems.</li>
+      </ul>
     </div>
   </div>
 </div>
 <hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- JGU Mainz: tau SPECT -->
+<!-- HIM Mainz -->
 <div style="display:flex;">
-  <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
-  </div>
-  <div style="flex:4;">
-    <p style="margin:0px">
-      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Aug 2022 - Feb 2023</span>
-    </p>
-    Research Assistant
-    <div style="color:#7a7a7a">
-      Supported trigger data analysis and hardware integration for the tau SPECT experiment
-    </div>
-  </div>
-</div>
-<hr style="height:1em; margin:0em; visibility:hidden;" />
 
-<!-- JGU Mainz: HGTD -->
-<div style="display:flex;">
-  <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
-  </div>
-  <div style="flex:4;">
-    <p style="margin:0px">
-      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Mar 2022 - Sep 2022</span>
-    </p>
-    Research Assistant
-    <div style="color:#7a7a7a">
-      Evaluated flexible PCB design for ATLAS HGTD under geometrical and thermal conditions
-    </div>
-  </div>
-</div>
-<hr style="height:1em; margin:0em; visibility:hidden;" />
-
-<!-- JGU Mainz: JUNO -->
-<div style="display:flex;">
-  <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/jgu.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
-  </div>
-  <div style="flex:4;">
-    <p style="margin:0px">
-      <b style="font-size: 130%;">Johannes Gutenberg University Mainz</b>
-      <span style="float:right; font-size:80%; color:#7a7a7a;">Aug 2021 - Feb 2022</span>
-    </p>
-    Research Assistant
-    <div style="color:#7a7a7a">
-      Tested RTD sensors and supported DAQ software using LabVIEW for the JUNO experiment
-    </div>
-  </div>
-</div>
-<hr style="height:1em; margin:0em; visibility:hidden;" />
-
-<!-- HIM Mainz: PANDA EMC -->
-<div style="display:flex;">
   <div style="flex:0.5; padding-right:5%">
     <img src="{{ site.url }}/images/resume/him.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
+
   <div style="flex:4;">
     <p style="margin:0px">
       <b style="font-size: 130%;">Helmholtz Institute Mainz</b>
@@ -180,7 +136,7 @@ Research experience 💼
     </p>
     Research Assistant
     <div style="color:#7a7a7a">
-      Contributed to assembly and setup of PANDA EMC for FAIR experiment in Darmstadt
+      Contributed to the assembly of the PANDA Backward Electromagnetic Calorimeter for the FAIR experiment. Involved in detector construction and integration.
     </div>
   </div>
 </div>
