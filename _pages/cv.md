@@ -92,7 +92,7 @@ Education 🎓
     </p>
     Self-Driven Research
     <ul style="margin-top: 5px; padding-left: 1.2em; color:#7a7a7a">
-      <li>Building a Transformer-based Large Language Model using PyTorch, based on Dr. Sebastian Raschka’s methodology.</li>
+      <li>Building a Transformer-based Large Language Model using PyTorch, based on Dr. Sebastian Raschka’s book.</li>
       <li>Implemented core components: tokenization, attention mechanisms, training loop, and fine-tuning pipeline.</li>
       <li>Exploring extensions into multimodal AI and intelligent agent workflows.</li>
     </ul>
