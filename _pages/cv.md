@@ -116,6 +116,7 @@ Education 🎓
         <li><b>τ SPECT Experiment:</b> Data analysis and hardware integration for UCN lifetime studies.</li>
         <li><b>ATLAS HGTD:</b> Evaluated flexible PCB stability under thermal/geometrical stress for precision timing detectors.</li>
         <li><b>JUNO Neutrino Experiment:</b> Validated RTD sensors and developed LabVIEW DAQ tools for integration with liquid scintillator systems.</li>
+        <li><b>Axion Dark Matter Experiment (ADMX):</b> Analyzed test spectra using an alternate CERN setup. Contributed to SUPAX detector development by improving sensitivity and noise reduction techniques.</li>
       </ul>
     </div>
   </div>
