@@ -220,7 +220,7 @@ Education 🎓
 </div>
 <hr style="height:2em; margin:0em; visibility:hidden;" />
 
-  
+<!--   
 Awards 
 ======
 <ul>
@@ -229,7 +229,7 @@ Awards
     <span style="float:right; font-size:80%; color:#7a7a7a;">2021</span> <br>
     <i>PhD funding</i>
   </li>
-
+<!-- 
   <li>
     <b>Cambridge' Department of Engineering Scholarship </b>
     <span style="float:right; font-size:80%; color:#7a7a7a;">2018</span> <br>
