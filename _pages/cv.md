@@ -76,13 +76,13 @@ Education 🎓
 
 
 
-### Project
+### Project 💻
 
 <!-- LLM from Scratch Project -->
 <div style="display:flex;">
 
   <div style="flex:0.5; padding-right:5%">
-    <img src="{{ site.url }}/images/resume/llm.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+    <img src="{{ site.url }}/images/resume/llm.jpg" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
   </div>
 
   <div style="flex:4;">
