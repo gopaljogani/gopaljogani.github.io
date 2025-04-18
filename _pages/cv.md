@@ -285,4 +285,3 @@ Awards
     <span style="float:right; font-size:80%;color:#7a7a7a;">2018</span> <br>
     <i>Trip organized for rising Swiss entrepreneurs.</i>
   </li> -->
-   
