@@ -76,7 +76,8 @@ Education 🎓
 
 
 
-### Project 💻
+Project 💻
+======
 
 <!-- LLM from Scratch Project -->
 <div style="display:flex;">
@@ -152,7 +153,8 @@ Education 🎓
 
 
 
-### Research Experience 💼
+Research Experience 💼
+======
 
 <!-- TU Dortmund -->
 <div style="display:flex;">
@@ -216,6 +218,42 @@ Education 🎓
     <div style="color:#7a7a7a">
       Contributed to the assembly of the PANDA Backward Electromagnetic Calorimeter for the FAIR experiment. Involved in detector construction and integration.
     </div>
+  </div>
+</div>
+<hr style="height:2em; margin:0em; visibility:hidden;" />
+
+Teaching Experience 💡 
+======
+<hr style="margin-top: 0.5em; margin-bottom: 1em;" />
+
+<!-- KSV Teaching Assistant -->
+<div style="display:flex;">
+
+  <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/KSV.png" style="align:left; border: 1px solid #d3d3d3; border-style: outset;">
+  </div>
+
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Kadi Sarva Vishwavidyalaya</b><br/>
+      <b style="font-size: 110%;">Teaching Assistant</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Jun 2017 – Feb 2021</span>
+    </p>
+    <div style="color:#7a7a7a; margin-top: 0.5em;">
+      Conducted undergraduate and graduate teaching in physics.
+    </div>
+    <p style="margin:0.8em 0 0.2em 0;"><b>Responsibilities:</b></p>
+    <ul style="margin-top: 0.2em;">
+      <li>Assisted in preparing <b>lecture notes and assignments</b> for undergraduate and graduate physics courses.</li>
+      <li>Conducted <b>lectures, tutorials, and lab sessions</b> for Bachelor’s and Master’s students.</li>
+      <li>Designed and delivered course materials for various physics subjects.</li>
+    </ul>
+    <p style="margin:0.8em 0 0.2em 0;"><b>Courses Taught:</b></p>
+    <ul>
+      <li>Applied Physics and Engineering Physics</li>
+      <li>Electronics</li>
+      <li>Nuclear and Particle Physics</li>
+    </ul>
   </div>
 </div>
 <hr style="height:2em; margin:0em; visibility:hidden;" />
