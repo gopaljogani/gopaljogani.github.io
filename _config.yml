@@ -9,11 +9,11 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Jigar Patel"
+title                    : "Gopal Jogani"
 title_separator          : "-"
-name                     : &name "Jigar Patel"
+name                     : &name "Gopal Jogani"
 description              : &description ""
-url                      : https://crea-troy.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://gopaljogani.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/crea-troy"
 teaser                   : "teaser.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -26,7 +26,7 @@ search                   : true # #default false
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "Jigar"
+    shortname            : "Gopal"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -73,7 +73,7 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - ""
-    - "https://www.linkedin.com/in/jigar-patel-3820ba11a/"
+    - "https://www.linkedin.com/in/gopal-jogani/"
 
 
 # AnalyticsY. Dubois
@@ -92,7 +92,7 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"https://scholar.google.com/citations?user=bfM1kzAAAAAJ&hl"
-  email            : jigarpatel15994@gmail.com
+  email            : gopalnjogani@gmail.com
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -101,13 +101,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "crea-troy"
+  github           : "gopaljogani"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : jigar-patel-3820ba11a
+  linkedin         : Gopal Jogani
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
